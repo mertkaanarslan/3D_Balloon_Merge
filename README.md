@@ -5,10 +5,8 @@
 ### Oyunu Açmak İçin:
 1. **Finder'dan:** `index.html` dosyasına çift tıklayın
 2. **Terminal'den:** `open index.html` komutunu çalıştırın
-3. **Tarayıcıdan:** Dosya yolunu adres çubuğuna yapıştırın:
-   ```
-   file:///Users/vethacagdas/Game_Ideas/3D_Balloon_Merge/index.html
-   ```
+3. **Tarayıcıdan:** Dosya yolunu adres çubuğuna yapıştırın (kendi bilgisayarınızdaki yolu kullanın)
+4. **GitHub Pages:** Repository'yi clone edip `index.html` dosyasını tarayıcıda açın
 
 ## Oyun Kuralları
 
@@ -36,5 +34,7 @@
 - **Three.js CDN** üzerinden yüklenir
 - **Tarayıcıda direkt çalışır**
 
+## Repository
 
+🔗 [GitHub Repository](https://github.com/mertkaanarslan/3D_Balloon_Merge)
 
