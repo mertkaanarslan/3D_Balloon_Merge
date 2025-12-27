@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Balloon Emerge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Menu / Level Map Screen -->
+    <div id="mainMenu" class="screen">
+        <div class="menu-container">
+            <div class="menu-header">
+                <h1>🎈 Balloon Emerge</h1>
+                <div class="menu-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">⭐ Stars</span>
+                        <span id="totalStars" class="stat-value">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="level-map-container">
+                <div id="levelMap" class="level-map">
+                    <!-- Levels will be generated here -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Start Screen (Hidden by default) -->
+    <div id="startScreen" class="screen hidden">
+        <div class="screen-content">
+            <h1>🎈 Balloon Emerge</h1>
+            <p>Match 3 balloons to combine them!</p>
+            <button id="startBtn" class="btn btn-primary">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="screen hidden">
+        <!-- HUD -->
+        <div class="hud">
+            <div class="hud-item">
+                <span class="hud-label">Level</span>
+                <span id="levelDisplay" class="hud-value">1</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">⭐ Stars</span>
+                <span id="starsDisplay" class="hud-value">0</span>
+            </div>
+            <div class="hud-item">
+                <span class="hud-label">Moves</span>
+                <span id="movesDisplay" class="hud-value">0</span>
+            </div>
+        </div>
+
+        <!-- 3D Canvas Container -->
+        <div id="canvasContainer"></div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <button id="menuBackBtn" class="btn btn-control">🏠 Menu</button>
+            <button id="undoBtn" class="btn btn-control">↶ Undo</button>
+            <button id="shuffleBtn" class="btn btn-control">🔀 Shuffle</button>
+            <button id="hintBtn" class="btn btn-control">💡 Hint</button>
+        </div>
+
+        <!-- Tray -->
+        <div class="tray">
+            <div class="tray-label">Tray</div>
+            <div id="traySlots" class="tray-slots"></div>
+        </div>
+    </div>
+
+    <!-- Win/Lose Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modalTitle">You Win!</h2>
+            <p id="modalMessage"></p>
+            <div class="modal-stats">
+                <div>⭐ Stars: <span id="modalStars">0</span></div>
+                <div>Moves: <span id="modalMoves">0</span></div>
+            </div>
+            <div class="modal-buttons">
+                <button id="nextBtn" class="btn btn-primary">Next Level</button>
+                <button id="retryBtn" class="btn btn-secondary">Retry</button>
+                <button id="menuBtn" class="btn btn-secondary">Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+

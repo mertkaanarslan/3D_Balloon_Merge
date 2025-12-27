@@ -1,0 +1,40 @@
+🎈 BALLOON EMERGE - OYUNU AÇMA REHBERİ
+========================================
+
+📌 HIZLI BAŞLATMA (ÖNERİLEN):
+-----------------------------
+1. Terminal'de bu klasöre gidin:
+   cd /Users/vethacagdas/Game_Ideas/3D_Balloon_Merge
+
+2. Şu komutu çalıştırın:
+   ./start.sh
+
+3. Tarayıcınızda şu linki açın:
+   http://localhost:8000
+
+
+📌 ALTERNATİF YÖNTEMLER:
+-------------------------
+
+YÖNTEM 1 - Python Sunucusu (Manuel):
+   python3 -m http.server 8000
+   Sonra tarayıcıda: http://localhost:8000
+
+YÖNTEM 2 - Direkt Dosya Açma:
+   Finder'da index.html dosyasına çift tıklayın
+   VEYA
+   Terminal'de: open index.html
+
+YÖNTEM 3 - Tarayıcı Adres Çubuğu:
+   file:///Users/vethacagdas/Game_Ideas/3D_Balloon_Merge/index.html
+   (Bu yöntemde bazı özellikler çalışmayabilir)
+
+
+⚠️ NOT: Python sunucusu ile açmak en iyi deneyimi sağlar!
+
+
+🛑 SUNUCUYU DURDURMAK İÇİN:
+   Terminal'de Ctrl+C tuşlarına basın
+
+
+

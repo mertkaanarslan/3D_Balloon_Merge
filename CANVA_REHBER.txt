@@ -1,0 +1,65 @@
+🎈 BALLOON EMERGE - CANVA SUNUMA EKLEME REHBERİ
+================================================
+
+📌 HIZLI ADIMLAR:
+-----------------
+
+1. LOCAL SUNUCUYU BAŞLATIN:
+   Terminal'de:
+   cd /Users/vethacagdas/Game_Ideas/3D_Balloon_Merge
+   python3 -m http.server 8000
+
+2. CANVA'DA EKLEME:
+   a) Canva'da slaytınızı açın
+   b) Sol menüden "Apps" > "HTML Embed" veya "Embed" arayın
+   c) HTML Embed widget'ını ekleyin
+   d) Aşağıdaki kodu yapıştırın:
+
+   <iframe 
+       src="http://localhost:8000/embed.html?autostart=true" 
+       width="100%" 
+       height="600px" 
+       frameborder="0"
+       allowfullscreen>
+   </iframe>
+
+3. BOYUTLANDIRMA:
+   - Genişlik: 100% veya 1920px
+   - Yükseklik: 600px - 800px (slayt boyutunuza göre)
+
+📌 ONLINE HOSTING (ÖNERİLEN):
+-----------------------------
+
+Eğer sunumunuzu başkalarıyla paylaşacaksanız:
+
+1. GitHub Pages:
+   - GitHub'a yükleyin
+   - Settings > Pages > Enable
+   - URL: https://YOUR_USERNAME.github.io/3D_Balloon_Merge/embed.html
+
+2. Netlify Drop:
+   - https://app.netlify.com/drop
+   - Klasörü sürükleyip bırakın
+   - URL alın
+
+3. Canva'da online URL kullanın:
+   <iframe 
+       src="https://YOUR-URL.netlify.app/embed.html?autostart=true" 
+       width="100%" 
+       height="600px" 
+       frameborder="0">
+   </iframe>
+
+📌 OTOMATIK BAŞLATMA:
+---------------------
+URL'ye ?autostart=true ekleyerek oyun otomatik başlar:
+embed.html?autostart=true
+
+📌 NOTLAR:
+----------
+- Local sunucu sadece sizin bilgisayarınızda çalışır
+- Başkalarıyla paylaşmak için online hosting gerekir
+- Canva'da HTML embed özelliği Pro plan gerektirebilir
+- Alternatif: Oyunu video olarak kaydedip ekleyin
+
+

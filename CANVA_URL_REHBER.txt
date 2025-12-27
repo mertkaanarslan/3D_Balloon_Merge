@@ -1,0 +1,62 @@
+🎈 CANVA'YA URL İLE EKLEME REHBERİ
+===================================
+
+Canva sadece URL kabul ediyor, HTML kodu değil.
+Bu yüzden oyunu online'da host etmeniz gerekiyor.
+
+📌 EN KOLAY YÖNTEM: NETLIFY DROP
+---------------------------------
+
+1. NETLIFY'DA HOST EDİN:
+   a) https://app.netlify.com/drop adresine gidin
+   b) Şu klasörü sürükleyip bırakın:
+      /Users/vethacagdas/Game_Ideas/3D_Balloon_Merge
+   c) Netlify size bir URL verecek:
+      Örnek: https://balloon-emerge-abc123.netlify.app
+
+2. CANVA'DA KULLANIN:
+   a) Canva'da slaytınızı açın
+   b) "Apps" > "Embed" veya "Website" arayın
+   c) URL alanına şunu yazın:
+      https://YOUR-URL.netlify.app/embed.html?autostart=true
+   
+   ÖRNEK:
+   https://balloon-emerge-abc123.netlify.app/embed.html?autostart=true
+
+📌 ALTERNATİF: GITHUB PAGES
+----------------------------
+
+1. GitHub'a yükleyin:
+   git init
+   git add .
+   git commit -m "Balloon Emerge"
+   git remote add origin YOUR_REPO_URL
+   git push
+
+2. GitHub Settings > Pages > Enable
+3. URL: https://YOUR_USERNAME.github.io/3D_Balloon_Merge/embed.html?autostart=true
+
+📌 LOCAL TEST İÇİN:
+------------------
+Eğer sadece kendi bilgisayarınızda test ediyorsanız:
+
+1. Terminal'de:
+   python3 -m http.server 8000
+
+2. Canva'da (sadece sizin bilgisayarınızda çalışır):
+   http://localhost:8000/embed.html?autostart=true
+
+⚠️ NOT: Local URL sadece sizin bilgisayarınızda çalışır!
+   Başkalarıyla paylaşmak için mutlaka online hosting gerekir.
+
+📌 ÖNERİLEN BOYUTLAR:
+---------------------
+- Genişlik: 1920px (slayt genişliği)
+- Yükseklik: 600-800px
+
+📌 OTOMATIK BAŞLATMA:
+---------------------
+URL'nin sonuna ?autostart=true ekleyin:
+embed.html?autostart=true
+
+

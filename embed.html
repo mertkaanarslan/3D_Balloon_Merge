@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Balloon Emerge - Embed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: transparent;
+        }
+        #gameContainer {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <div class="screen-content">
+                <h1>🎈 Balloon Emerge</h1>
+                <p>Match 3 balloons to combine them!</p>
+                <button id="startBtn" class="btn btn-primary">Start Game</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen hidden">
+            <!-- HUD -->
+            <div class="hud">
+                <div class="hud-item">
+                    <span class="hud-label">Level</span>
+                    <span id="levelDisplay" class="hud-value">1</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">⭐ Stars</span>
+                    <span id="starsDisplay" class="hud-value">0</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">Moves</span>
+                    <span id="movesDisplay" class="hud-value">0</span>
+                </div>
+            </div>
+
+            <!-- 3D Canvas Container -->
+            <div id="canvasContainer"></div>
+
+            <!-- Control Buttons -->
+            <div class="controls">
+                <button id="undoBtn" class="btn btn-control">↶ Undo</button>
+                <button id="shuffleBtn" class="btn btn-control">🔀 Shuffle</button>
+                <button id="hintBtn" class="btn btn-control">💡 Hint</button>
+            </div>
+
+            <!-- Tray -->
+            <div class="tray">
+                <div class="tray-label">Tray</div>
+                <div id="traySlots" class="tray-slots"></div>
+            </div>
+        </div>
+
+        <!-- Win/Lose Modal -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="modalTitle">You Win!</h2>
+                <p id="modalMessage"></p>
+                <div class="modal-stats">
+                    <div>⭐ Stars: <span id="modalStars">0</span></div>
+                    <div>Moves: <span id="modalMoves">0</span></div>
+                </div>
+                <div class="modal-buttons">
+                    <button id="nextBtn" class="btn btn-primary">Next Level</button>
+                    <button id="retryBtn" class="btn btn-secondary">Retry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
